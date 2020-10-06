@@ -1,0 +1,22 @@
+cd src
+mkdir services
+cd services
+ng g s contactservices
+
+*******************
+
+dans le module root dans injecter vos services créer 
+
+sinon la méthode @in
+
+  providers: [MyserviceService], 
+
+
+*************
+
+ensuite dans les composants injecter vos services par constructeur:
+
+   constructor(private myservice: MyserviceService) { }
+
+***************
+apres appel de services pointer sur la methode que vous voulez ........
